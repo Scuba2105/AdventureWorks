@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import { Logo } from './components/Logo'
+import { MenuOptions } from './components/MenuOptions'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='app-container'>
-        <div className="sidenav"></div>
-        <div className="main-area"></div>
+        <div className="sidenav">
+          <Logo />
+          <MenuOptions />
+        </div>
+        <div className="main-area">Main Area</div>
       </div>
     </>
   )
