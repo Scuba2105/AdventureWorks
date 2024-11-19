@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className='app-container'>
-        <div className="sidenav">
+        <div className="sidenav flex-c-vert">
           <Logo />
           <MenuOptions />
         </div>

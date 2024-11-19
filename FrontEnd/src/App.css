@@ -35,6 +35,8 @@
   height: 100%;
   width: 100%;
   background-color: var(--dark-theme);
+  justify-content: flex-start;
+  padding-top: 20px;
 }
 
 .main-area {
@@ -48,6 +50,7 @@
 .menu-option {
   font-size: 13px;
   padding: 10px 0px; 
+  width: 100%;
 }
 
 .menu-option:hover {
