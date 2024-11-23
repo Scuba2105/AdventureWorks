@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 
 export function Dashboard() {
     const [data, setData] = useState(null)
-    const [loading, setIsLoading] = useState('true')
-    const [error, setError] = useState('false')
+    const [isLoading, setIsLoading] = useState(true)
+    const [error, setError] = useState(false)
     
     useEffect(() => {
         async function fetchData() {
@@ -28,14 +28,14 @@ export function Dashboard() {
         fetchData();
     }, [])
     
-    if (loading == 'true') {
+    if (isLoading == true) {
         return (
             <div>Loading...</div>
         )
     }
-    else if (error == 'false') {
+    else if (error == true) {
         return (
-            <div>An error occurred</div>
+            <div>An error occurred!</div>
         )
     }
     else {
