@@ -14,7 +14,8 @@ app.use(cors({
   optionSuccessStatus: 200
 }))
 
-app.get('/getDashboardData',(req, res) => {
+// Route for serving the dashboard data
+app.get('/dashboardData',(req, res) => {
   res.json({text: 'Hello'})
 })
 
